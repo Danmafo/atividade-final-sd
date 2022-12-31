@@ -1,4 +1,4 @@
-package com.bridgingcode.springbootactivemqdemo.util;
+package br.com.atividade.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

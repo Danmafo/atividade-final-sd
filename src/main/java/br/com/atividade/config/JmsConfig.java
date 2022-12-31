@@ -1,4 +1,4 @@
-package com.bridgingcode.springbootactivemqdemo.config;
+package br.com.atividade.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

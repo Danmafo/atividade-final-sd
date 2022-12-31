@@ -1,6 +1,6 @@
-package com.bridgingcode.springbootactivemqdemo.questa1a;
+package br.com.atividade.questa1a;
 
-import com.bridgingcode.springbootactivemqdemo.model.Veiculo;
+import br.com.atividade.model.Veiculo;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 import com.thoughtworks.xstream.security.AnyTypePermission;

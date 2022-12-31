@@ -1,6 +1,6 @@
-package com.bridgingcode.springbootactivemqdemo.consumer.component;
+package br.com.atividade.consumer.component;
 
-import com.bridgingcode.springbootactivemqdemo.model.Veiculo;
+import br.com.atividade.model.Veiculo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jms.annotation.JmsListener;

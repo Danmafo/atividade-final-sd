@@ -1,6 +1,6 @@
-package com.bridgingcode.springbootactivemqdemo.publisher.controller;
+package br.com.atividade.publisher.controller;
 
-import com.bridgingcode.springbootactivemqdemo.model.Veiculo;
+import br.com.atividade.model.Veiculo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
-package com.bridgingcode.springbootactivemqdemo.model;
+package br.com.atividade.model;
 
-import com.bridgingcode.springbootactivemqdemo.util.ConversorData;
+import br.com.atividade.util.ConversorData;
 
 import java.io.Serializable;
 import java.util.Date;

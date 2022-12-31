@@ -1,4 +1,4 @@
-package com.bridgingcode.springbootactivemqdemo;
+package br.com.atividade;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
