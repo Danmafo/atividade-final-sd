@@ -25,7 +25,6 @@ public class VeiculoController {
     public ResponseEntity<String> enviarVeiculo(@RequestBody Veiculo veiculo) {
         try {
             jmsTemplate.convertAndSend("fila_veiculos_rest", veiculo);
-            repository.save(veiculo);
             return new ResponseEntity<>("Sent.", HttpStatus.OK);
 
         } catch (Exception e) {
