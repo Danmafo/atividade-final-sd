@@ -1,13 +1,20 @@
 package br.com.atividade.model;
 
-import br.com.atividade.util.ConversorData;
+import org.hibernate.annotations.CreationTimestamp;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+@Entity
+@Table(name = "veiculos")
 public class Veiculo implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String nomeCliente;
 
@@ -17,14 +24,16 @@ public class Veiculo implements Serializable {
 
     private Double valorVenda;
 
+    @CreationTimestamp
     private Date dataPublicacao;
+
+    public Veiculo() {}
 
     public Veiculo(String nomeCliente, String marcaModeloVeiculo, Integer anoModelo, Double valorVenda) {
         this.nomeCliente = nomeCliente;
         this.marcaModeloVeiculo = marcaModeloVeiculo;
         this.anoModelo = anoModelo;
         this.valorVenda = valorVenda;
-        this.dataPublicacao = new Date();
     }
 
     public String getNomeCliente() {
@@ -74,7 +83,7 @@ public class Veiculo implements Serializable {
                 "Marca e Modelo = " + marcaModeloVeiculo + '\n' +
                 "Ano = " + anoModelo + '\n' +
                 "Valor de Venda = " + valorVenda + '\n' +
-                "Data da Publição = " + ConversorData.converteDataDiaMesAno(dataPublicacao) + '\n' +
+                "Data da Publição = " + dataPublicacao + '\n' +
                 '}';
     }
 }

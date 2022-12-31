@@ -12,7 +12,7 @@ public class Consumidor {
     private static final Logger LOGGER = LoggerFactory.getLogger(Consumidor.class);
 
     @JmsListener(destination = "fila_veiculos_rest")
-    public void messageListener(Veiculo systemMessage) {
-        LOGGER.info("Message received! {}", systemMessage);
+    public void messageListener(Veiculo veiculo) {
+        LOGGER.info("Message received! {}", veiculo);
     }
 }
